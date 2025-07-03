@@ -1,0 +1,202 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: Poppins, sans-serif;
+  text-decoration: none;
+  cursor: default;
+  scroll-behavior: smooth;
+}
+.Rishan {
+  margin: 0;
+  padding: 0;
+  font-size: 30px; /* adjust as needed */
+  color: white;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding-left: 30px;
+  background-color: black;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  padding-right: 100px;
+  margin: 0;
+  display: inline-block;
+  gap: 40px;
+}
+nav ul li a {
+    position: relative;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: font-size 0.3s ease-in-out;
+  }
+  
+
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    border-radius: 50%;
+    background-color: white;
+    transition: width 0.4s ease-in-out;
+  }
+  
+
+  nav ul li a:hover::after {
+    width: 100%; 
+  }
+  
+  nav ul li a:hover {
+    font-size: 27px;
+    font-weight: bolder;
+  }
+.nav .Rishan:hover {
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+}
+.hero {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  text-align: center;
+  justify-content: center;
+}
+.hero h2,
+p {
+  color: black;
+}
+.hero h2 {
+  font-size: 50px;
+}
+.hero p {
+  font-size: 25px;
+}
+.hero a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  background-color: hsl(196, 83%, 46%);
+  padding: 20px 20px;
+  margin: 50px auto;
+  border-radius: 10px;
+  font-size: 20px;
+  transition: 0.5s ease-in-out;
+}
+.hero a:hover {
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  transform: scale(1.2);
+}
+.txt {
+  transition: 0.5s ease-in-out;
+}
+.hero .txt:hover {
+  text-shadow: 2px 2px black;
+}
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.about {
+  height: 100vh;              /* Full viewport height */
+  display: flex;              /* Use flexbox */
+  flex-direction: column;     /* Stack items vertically */
+  justify-content: center;    /* Center vertically */
+  align-items: center;        /* Center horizontally */
+  padding: 0 20px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 48px;
+  color: #0a2a43;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.about p {
+  font-size: 20px;
+  line-height: 1.8;
+  max-width: 900px;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  padding: 20px;
+}
+.contact {
+  height: 100vh;               /* Full viewport height */
+  display: flex;               /* Flexbox for centering */
+  flex-direction: column;      /* Stack vertically */
+  justify-content: center;     /* Center vertically */
+  align-items: center;         /* Center horizontally */
+  text-align: center;
+  padding: 20px;
+}
+
+.contact h1 {
+  font-size: 48px;
+  color: #0a2a43;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.contactlinks {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;                  /* space between icons */
+  align-items: center;
+  justify-content: center;
+}
+
+.footlogo {
+  width: 20px;                /* size of icons */
+  height: 20px;
+  filter: invert(10%);        /* subtle dark color */
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.footlogo:hover {
+  transform: scale(1.2);
+}
+.contactlinks a{
+  text-decoration: none;
+  color: black;
+  display: flex;
+
+}
